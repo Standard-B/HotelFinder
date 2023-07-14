@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<header th:fragment="header" class="header p-3 h-auto">
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img class="img-logo" src="/img/Htel.png">
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-dark">고객센터</a></li>
+                <li><a href="#" class="nav-link px-2 text-dark">예약 검색</a></li>
+                <li><a href="/hotel/list.do" class="nav-link px-2 text-dark">호텔 목록</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="호텔명을 입력하세요" aria-label="Search">
+                    <button class="btn btn-primary d-flex">
+                        <span class="material-symbols-outlined">
+                          search
+                        </span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                    Login
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SingUpModal">
+                    SignUp
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid text-center mt-lg-5 mb-5">
+        <h1 id="home-title" class="h1 mb-3 pt-4 text-white">호텔 예약은 Hotel Finder</h1>
+        <div class="container-md bg-white rounded-4 w-75 h-auto p-lg-3 p-3">
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputHotel">
+                        <label for="floatingInputHotel">호텔명 검색</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="form-floating">
+                        <input type="date" id="floatingInputStartDate" class="form-control" placeholder="체크인">
+                        <label for="floatingInputStartDate">체크인</label>
+                    </div>
+                    <span class="input-group-text">1박</span>
+                    <div class="form-floating">
+                        <input type="date" id="floatingInputEndDate" class="form-control" placeholder="체크아웃">
+                        <label for="floatingInputEndDate">체크아웃</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid">
+                            <option selected>객실 1개, 성인 2명</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelectGrid">객실당 인원 수</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <button class="btn btn-warning w-25 justify-content-center align-items-center">검색</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 로그인 모달 -->
+    <div th:replace="users/login.html :: login"></div>
+
+    <!-- 회원가입 모달 -->
+    <div th:replace="users/signup.html :: signup"></div>
+
+</header>
+
+</html>

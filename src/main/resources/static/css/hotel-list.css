@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bi-star-fill {
+    color: #ffb400;
+}
+
+body,
+.main-section,
+.my-container {
+    background-color: #f6f7fb !important;
+}
+
+h2.fw-bold.ps-3 {
+    font-family: LINESeedKR-Bd;
+    color: #13375d
+}
+
+.my-btn {
+    width: 100%;
+    background-color: white;
+    color: #13375d;
+    font-weight: bold;
+    border: 0;
+}
+
+.my-btn:hover {
+    color: #0b5ed7;
+}
+
+.my-btn.active {
+    background-color: #13375d !important;
+    color: white;
+}
+
+.btn-group .my-btn:nth-child(1) {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn-group .my-btn:nth-child(4) {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-right: 0;
+}
+
+.card {
+    cursor: pointer;
+}
+
+
+.ui-slider-handle {
+    background-color: #ff0000;
+    color: #ff0000;
+    border-radius: 50%;
+}
+
+.ui-state-active {
+    background: #ededed !important;
+    border: 1px solid #ededed !important;
+}
+
+.ui-state-focus {
+    border: 1px solid #cccccc !important;
+}

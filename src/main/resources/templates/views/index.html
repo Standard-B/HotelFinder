@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="inc/asset.html :: head"></th:block>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header th:replace="inc/header.html :: header"></header>
+
+    <!-- 인기 숙소 리스트 -->
+    <section class="main-section container-fluid bg-white rounded-5">
+        <div class="container-lg w-75 pt-3 rounded-3">
+            <div class="p-4 mt-3 rounded-3" style="background-color: #fdf9f6;">
+                <h2 class="h2 fw-bold pb-2">인기 숙소</h2>
+                <div class="container-lg p-0 pb-3 overflow-hidden">
+                    <button class="my-btn active">서울</button>
+                    <button class="my-btn">제주</button>
+                    <button class="my-btn">부산</button>
+                    <button class="my-btn">인천</button>
+                    <button class="my-btn">경주</button>
+                </div>
+
+                <!--인기 숙소 카드 리스트-->
+                <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1 g-4">
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/220k0x000000lfrruA899_R_640_440_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">유리엔 호텔</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Hotel Uri&)</h5>
+                                    <span>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/200t0u000000iuvw6C818_R_960_660_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">페어필드 바이 메리어트 서울</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Fairfield by Marriott Seoul)</h5>
+                                    <span>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-xl-3 d-none d-lg-block">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/0225f1200080wsos13299_R_960_660_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">베이튼 서울 동대문 호텔</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Baiton Seoul Dongdaemun)</h5>
+                                    <span>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3 d-none d-xl-block">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/0201a120008h4pb3x9EA4_R_640_440_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">토요코인 서울 영등포</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Toyoko Inn Seoul Yeongdeungpo)</h5>
+                                    <span>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인기 여행지 리스트 -->
+    <section class="main-section container-fluid bg-white rounded-5">
+        <div class="container-lg w-75 pt-3 rounded-3">
+            <div class="p-4 mt-3 rounded-3" style="background-color: #f6fafd;">
+                <h2 class="h2 fw-bold pb-2">인기 여행지</h2>
+                <div class="container-lg p-0 pb-3 overflow-hidden">
+                    <button class="my-btn active">서울</button>
+                    <button class="my-btn">제주</button>
+                    <button class="my-btn">부산</button>
+                    <button class="my-btn">인천</button>
+                    <button class="my-btn">경주</button>
+                </div>
+
+                <!--인기 여행지 카드 리스트-->
+                <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1 g-4">
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/220k0x000000lfrruA899_R_640_440_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">유리엔 호텔</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Hotel Uri&)</h5>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/200t0u000000iuvw6C818_R_960_660_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">페어필드 바이 메리어트 서울</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Fairfield by Marriott Seoul)</h5>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-xl-3 d-none d-lg-block">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/0225f1200080wsos13299_R_960_660_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">베이튼 서울 동대문 호텔</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Baiton Seoul Dongdaemun)</h5>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3 d-none d-xl-block">
+                        <div class="hotel-list-box card shadow-lg mb-5 bg-body rounded h-100">
+                            <div class="text-decoration-none h-100" onclick="location.href='#'">
+                                <div class="hotel-img h-50">
+                                    <img src="https://aw-d.tripcdn.com/images/0201a120008h4pb3x9EA4_R_640_440_R5_D.jpg_.webp" class="card-img-top h-100" alt="인기숙소 이미지">
+                                </div>
+                                <div class="card-body position-relative h-50">
+                                    <h5 class="card-title fw-bold text-truncate">토요코인 서울 영등포</h5>
+                                    <h5 class="card-subtitle fs-6 text-truncate">(Toyoko Inn Seoul Yeongdeungpo)</h5>
+                                    <p class="fs-6">이용자 리뷰 1,1852개</p>
+                                    <p class="card-text text-end position-absolute bottom-0 end-0 p-2"><small class="small">최저가</small> <span class="fw-bold fs-5">111,150원</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

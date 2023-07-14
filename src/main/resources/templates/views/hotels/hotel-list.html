@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="inc/asset.html :: head"></th:block>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/css/hotel-list.css">
+</head>
+<body>
+
+<!-- header -->
+<header th:replace="inc/header.html :: header"></header>
+
+<section class="main-section container-fluid bg-white rounded-5">
+    <div class="my-container container-md rounded-5">
+        <div class="d-flex pt-4">
+            <div class="row w-25 d-none d-lg-block">
+                <div class="col-4 w-100">
+                    <div class="container-fluid text-center rounded-top bg-white w-100">
+                        <p class="text-start p-2 mb-2 fw-bold">요금 필터</p>
+                        <div id="rangeSlider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row w-100">
+                <div class="col-8 w-100">
+                    <h2 class="fw-bold ps-3">숙소 검색 결과 1121개</h2>
+                    <div class="container-fluid d-flex mb-4">
+                        <div class="btn-group w-100">
+                            <button class="my-btn pt-2 pb-2 active">인기 호텔</button>
+                            <button class="my-btn pt-2 pb-2">가격 낮은 순</button>
+                            <button class="my-btn pt-2 pb-2">가격 높은 순</button>
+                            <button class="my-btn pt-2 pb-2">리뷰 많은 순</button>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="card mb-3 border-0" onclick="location.href='#'">
+                            <div class="row g-0 p-3 align-items-center">
+                                <div class="col-md-4 w-25">
+                                    <img src="https://aw-d.tripcdn.com/images/220k0x000000lfrruA899_R_640_440_R5_D.jpg_.webp"
+                                         class="img-fluid rounded" alt="호텔이미지">
+                                </div>
+                                <div class="col-md-8 w-75">
+                                    <div class="card-body pt-lg-0 pt-sm-2">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <h5 class="card-title m-0 fs-4 fw-bold">유리엔 호텔</h5>
+                                            <small class="small fs-5 fw-bold pe-2">(Hotel Uri&)</small>
+                                            <span>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <span>
+                                              (86)
+                                            </span>
+                                        </div>
+                                        <p class="card-text">
+                                            <small class="text-muted d-flex align-items-center">
+                                              <span class="material-symbols-outlined text-muted">
+                                                location_on
+                                              </span>
+                                                대한민국 서울특별시 강남구 삼성로96길 20 (06169)
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="container d-flex flex-column align-items-end text-end pe-0">
+                                        <p class="fs-4 fw-bold mb-2">114,000원</p>
+                                        <button class="btn btn-primary w-25">예약하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0" onclick="location.href='#'">
+                            <div class="row g-0 p-3 align-items-center">
+                                <div class="col-md-4 w-25">
+                                    <img src="https://aw-d.tripcdn.com/images/200t0u000000iuvw6C818_R_960_660_R5_D.jpg_.webp"
+                                         class="img-fluid rounded" alt="호텔이미지">
+                                </div>
+                                <div class="col-md-8 w-75">
+                                    <div class="card-body pt-lg-0 pt-sm-2">
+                                        <div class="d-flex align-items-center mb-1 flex-wrap">
+                                            <h5 class="card-title m-0 fs-4 fw-bold">페어필드 바이 메리어트 서울</h5>
+                                            <small class="small fs-5 fw-bold pe-2">(Fairfield by Marriott Seoul)</small>
+                                            <span>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                              <i class="bi bi-star-fill"></i>
+                                            </span>
+                                            <span>
+                                              (86)
+                                            </span>
+                                        </div>
+                                        <p class="card-text">
+                                            <small class="text-muted d-flex align-items-center">
+                                              <span class="material-symbols-outlined text-muted">
+                                                location_on
+                                              </span>
+                                                대한민국 서울특별시 강남구 삼성로96길 20 (06169)
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="container d-flex flex-column align-items-end text-end pe-0">
+                                        <p class="fs-4 fw-bold mb-2">114,000원</p>
+                                        <button class="btn btn-primary w-25">예약하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $("#rangeSlider").slider({
+            range: true,
+            min: 0,
+            max: 100,
+            values: [25, 75],
+            slide: function(event, ui) {
+                $("#minValue").text(ui.values[0]);
+                $("#maxValue").text(ui.values[1]);
+            }
+        });
+
+        $("#minValue").text($("#rangeSlider").slider("values", 0));
+        $("#maxValue").text($("#rangeSlider").slider("values", 1));
+    });
+</script>
+</body>
+</html>

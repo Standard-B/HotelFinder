@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="login" class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="#" method="POST">
+                <div class="modal-body text-center">
+                    <img class="img-logo" src="/img/Htel.png" alt="로고이미지">
+                    <h1 class="fs-4 pt-1 fw-bold mb-3">HOTEL FINDER LOGIN</h1>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="ID">
+                        <label for="floatingInput">아이디</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">패스워드</label>
+                    </div>
+                    <div class="container mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="아이디 저장" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        아이디 저장
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col-auto">
+                                <div class="nav justify-content-end">
+                                    <a class="nav-link p-0" href="#">아이디/비밀번호 찾기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group w-100 mb-2">
+                        <input type="submit" class="btn btn-warning" value="로그인">
+                    </div>
+                    <div class="container">
+                        <p>
+                            회원이 아니신가요?
+                            <a class="link-dark" data-bs-toggle="modal" data-bs-target="#SingUpModal" href="#">
+                                회원가입
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</html>
