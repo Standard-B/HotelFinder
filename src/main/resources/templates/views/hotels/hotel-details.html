@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="inc/asset.html :: head"></th:block>
+    <link rel="stylesheet" href="/css/hotel-details.css">
+</head>
+<body>
+<!-- header -->
+<header th:replace="inc/header.html :: header"></header>
+
+<section class="main-section container-fluid bg-white rounded-5">
+    <div class="my-container container-fluid rounded-5">
+        <div class="container-lg pt-4">
+            <div class="d-flex flex-column bg-white p-3 rounded">
+                <div class="d-flex mb-4">
+                    <div class="d-flex flex-column col-8">
+                        <div class="d-flex align-items-center mb-2">
+                            <h3 class="h3 fw-bold m-0 me-2">유리엔 호텔 (Hotel Uri&)</h3>
+                            <div>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="card-text">
+                                <small class="text-muted d-flex align-items-center">
+                                    <span class="material-symbols-outlined text-muted">
+                                    location_on
+                                    </span>
+                                    대한민국 서울특별시 강남구 삼성로96길 20 (06169)
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end col-4">
+                        <button class="btn btn-primary w-30">객실 선택</button>
+                    </div>
+                </div>
+                <div class="d-flex" style="height: 335px;">
+                    <div class="d-flex pe-1" style="width: 38.8%; height: 100%">
+                        <div>
+                            <img src="https://aw-d.tripcdn.com/images/220k0x000000lfrruA899_R_960_660_R5_D.jpg_.webp"
+                                 class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" style="width: 61.2%; height: 100%;">
+                        <div class="d-flex pb-1 h-50">
+                            <div class="pe-1">
+                                <img src="https://aw-d.tripcdn.com/images/220h0z000000mxkqn4512_R_452_274_R5_D.jpg_.webp"
+                                     class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                            </div>
+                            <div class="pe-1">
+                                <img src="https://aw-d.tripcdn.com/images/0224212000apce1o368F6_R_452_274_R5_D.jpg_.webp"
+                                     class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                            </div>
+                            <div>
+                                <img src="https://aw-d.tripcdn.com/images/0225s12000863qbz0829D_R_452_274_R5_D.jpg_.webp"
+                                     class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                            </div>
+                        </div>
+                        <div class="d-flex h-50">
+                            <div class="pe-1">
+                                <img src="https://aw-d.tripcdn.com/images/220i0x000000laeroFAB8_R_452_274_R5_D.jpg_.webp"
+                                     class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                            </div>
+                            <div class="pe-1">
+                                <img src="https://aw-d.tripcdn.com/images/200b0c00000066fx39FC8_R_452_274_R5_D.jpg_.webp"
+                                     class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                            </div>
+                            <div>
+                                <img src="https://aw-d.tripcdn.com/images/20020c00000066fnm7000_R_452_274_R5_D.jpg_.webp"
+                                     class="img-fluid rounded" alt="호텔이미지" style="width: 100%; height: 100%; object-fit: cover; object-position: center center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-2 w-50 me-2 p-3 rounded box-line-hover" style="background-color: #f6f7fb">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center border rounded-5 p-1 me-2"
+                                     style="background-color: #1136a6;">
+                                    <span class="fw-bold text-white ps-1">8.2</span>
+                                    <span class="text-white me-1 ms-1">/</span>
+                                    <small class="text-white pe-1">10</small>
+                                </div>
+                                <div class="text-secondary fw-bold">·</div>
+                                <div class="fw-bold ms-2" style="color: #1136a6">아주 좋음</div>
+                            </div>
+                            <div class="text-black-50 mt-1">
+                                <span style="color: #1136a6">"최고의 위치"</span> 76% 추천
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center" style="cursor: pointer">
+                                <a class="text-decoration-none fw-bold underline-hover" href="#" style="color: #3264ff">
+                                    전체 182개 리뷰
+                                </a>
+                                <span class="material-symbols-outlined" style="color: #3264ff">
+                                        chevron_right
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2 w-50 p-3 rounded position-relative box-line-hover" style="background-color: #f6f7fb">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center me-3 text-wrap">
+                                    <span class="material-symbols-outlined me-1">
+                                        local_parking
+                                    </span>
+                                    <span class="fs-7">주차시설</span>
+                                </div>
+                                <div class="d-flex align-items-center me-3 text-wrap">
+                                    <span class="material-symbols-outlined me-1">
+                                        exercise
+                                    </span>
+                                    <span class="fs-7">운동시설</span>
+                                </div>
+                                <div class="d-flex align-items-center text-wrap">
+                                    <span class="material-symbols-outlined me-1">
+                                        wifi
+                                    </span>
+                                    <span class="fs-7">공공장소 Wi-Fi</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center position-absolute end-0 bottom-0 pe-3 pb-3" style="cursor: pointer">
+                                <a class="text-decoration-none fw-bold underline-hover" href="#" style="color: #3264ff">
+                                    모든 시설
+                                </a>
+                                <span class="material-symbols-outlined" style="color: #3264ff">
+                                        chevron_right
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg pt-2">
+            <div class="d-flex flex-column bg-white rounded-top border-bottom">
+                <div class="border-bottom d-flex justify-content-around pb-3 pt-3 mb-4 w-100">
+                    <div class="fw-bold text-hover">객실</div>
+                    <div class="fw-bold text-hover">투숙객 리뷰</div>
+                    <div class="fw-bold text-hover">호텔 정책</div>
+                    <div class="fw-bold text-hover">시설 & 서비스</div>
+                </div>
+                <div class="p-3">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="me-3">
+                            <img src="https://aw-d.tripcdn.com/images/200t0c00000064v1o87F6_R_121_92_R5_D.jpg_.webp">
+                        </div>
+                        <div class="w-100 d-flex flex-column">
+                            <div class="fw-bold fs-5 mb-1">수페리어 트윈룸</div>
+                            <div class="d-flex mb-1 w-100">
+                                <div class="me-3 d-flex align-items-center">
+                                    <span class="material-symbols-outlined me-1">
+                                        person
+                                    </span>
+                                    <span>성인 2명</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        bed
+                                    </span>
+                                    <span class="material-symbols-outlined me-1">
+                                        bed
+                                    </span>
+                                    <span>싱글 침대 2개</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="text-decoration-none fw-bold" style="color: #3264ff" href="#">시설 & 서비스 모두 보기</a>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-primary">예약하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column bg-white">
+                <div class="p-3">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="me-3">
+                            <img src="https://aw-d.tripcdn.com/images/0222f12000amyzs6s858D_R_121_92_R5_D.jpg_.webp">
+                        </div>
+                        <div class="w-100 d-flex flex-column">
+                            <div class="fw-bold fs-5 mb-1">수페리어 트윈룸</div>
+                            <div class="d-flex mb-1 w-100">
+                                <div class="me-3 d-flex align-items-center">
+                                    <span class="material-symbols-outlined me-1">
+                                        person
+                                    </span>
+                                    <span>성인 2명</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        bed
+                                    </span>
+                                    <span class="material-symbols-outlined me-1">
+                                        bed
+                                    </span>
+                                    <span>싱글 침대 2개</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="text-decoration-none fw-bold" style="color: #3264ff" href="#">시설 & 서비스 모두 보기</a>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-primary">예약하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg pt-2">
+            <div class="d-flex flex-column bg-white p-3">
+                <div class="fw-bold fs-5 mb-3">주변 숙소</div>
+                <div class="d-flex justify-content-around">
+                    <div class="d-flex me-1">
+                        <div class="card" style="width: 19rem;">
+                            <img src="https://ak-d.tripcdn.com/images/20030i0000009dp2nF88A_R_300_225_R5_D.jpg_.webp" class="card-img-top" alt="호텔사진">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex me-1">
+                        <div class="card" style="width: 19rem;">
+                            <img src="https://ak-d.tripcdn.com/images/200r0x000000kvxn3148E_R_300_225_R5_D.jpg_.webp" class="card-img-top" alt="호텔사진">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex me-1 d-sm-none d-md-none d-lg-flex">
+                        <div class="card d-sm-none d-md-none d-lg-flex" style="width: 19rem;">
+                            <img src="https://ak-d.tripcdn.com/images/fd/hotel/g3/M0A/FA/B9/CggYGVZSeYqAPjWgACx43g3IToo521_R_300_225_R5_D.jpg_.webp" class="card-img-top" alt="호텔사진">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex me-1 d-sm-none d-md-none d-lg-none d-xl-none d-xxl-flex">
+                        <div class="card d-sm-none d-md-none d-lg-none d-xl-none d-xxl-flex" style="width: 19rem;">
+                            <img src="https://ak-d.tripcdn.com/images/2001160000010ph1f89D5_R_300_225_R5_D.jpg_.webp" class="card-img-top" alt="호텔사진">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

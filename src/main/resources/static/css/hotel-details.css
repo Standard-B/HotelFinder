@@ -1,0 +1,31 @@
+body,
+.main-section,
+.my-container {
+    background-color: #f6f7fb !important;
+}
+
+.bi-star-fill {
+    color: #ffb400;
+}
+
+.underline-hover:hover {
+    text-decoration-line: underline !important;
+}
+
+.box-line-hover {
+    border: 1px solid #f6f7fb;
+}
+
+.box-line-hover:hover {
+    border: 1px solid #1136a6;
+    cursor: pointer;
+}
+
+.text-hover:hover {
+    color: #1136a6;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
